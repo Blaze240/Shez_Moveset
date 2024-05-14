@@ -13,9 +13,23 @@
     clippy::borrow_interior_mutable_const
 )]
 
-mod EDIT;
+static mut EDGE_EXIST : bool = false;
 
-#[skyline::main(name = "smashline_test")]
+mod win1;
+mod win2;
+mod win3;
+
+mod common;
+mod slipatch;
+
+#[skyline::main(name = "cloud_victory")]
 pub fn main() {
-    EDIT::install();
+	common::install();
+
+    win1::install();
+	win2::install();
+	win3::install();
+
+	slipatch::install();
+
 }
