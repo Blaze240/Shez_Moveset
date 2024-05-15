@@ -1,19 +1,16 @@
-#![feature(
-    concat_idents,
-    proc_macro_hygiene
-)]
+#![feature(concat_idents, proc_macro_hygiene)]
 #![allow(
     unused_imports,
-	unused_macros,
-	unused_variables,
-	unused_assignments,
-	unused_unsafe,
-	non_upper_case_globals,
-	non_snake_case,
+    unused_macros,
+    unused_variables,
+    unused_assignments,
+    unused_unsafe,
+    non_upper_case_globals,
+    non_snake_case,
     clippy::borrow_interior_mutable_const
 )]
 
-static mut EDGE_EXIST : bool = false;
+static mut MASTER_EXIST: bool = false;
 
 mod win1;
 mod win2;
@@ -22,14 +19,13 @@ mod win3;
 mod common;
 mod slipatch;
 
-#[skyline::main(name = "cloud_victory")]
+#[skyline::main(name = "shez_moveset")]
 pub fn main() {
-	common::install();
+    common::install();
 
     win1::install();
-	win2::install();
-	win3::install();
+    win2::install();
+    win3::install();
 
-	slipatch::install();
-
+    slipatch::install();
 }

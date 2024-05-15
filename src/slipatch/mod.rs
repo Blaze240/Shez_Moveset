@@ -13,9 +13,9 @@ fn sli_patch(hash: u64, data: &mut [u8]) -> Option<usize> {
             Ok(f) => {
                 let mut sli = f;
                 sli.entries.push(smash_sli::SliEntry {
-                    tone_name: smash_sli::Hash40(hash40("vc_cloud_win04").as_u64()),
-                    nus3bank_id: 4587,
-                    tone_id: 49,
+                    tone_name: smash_sli::Hash40(hash40("vc_roy_win_master").as_u64()),
+                    nus3bank_id: 4025,
+                    tone_id: 36,
                 });
                 match sli.write(&mut buff)
                 {

@@ -1,1 +1,2 @@
-Skyline plugin for adding a unique victory quote to Cloud when facing Sephiroth.
+# General Information
+Skyline plugin that adds a unique moveset for Shez over Roy.
