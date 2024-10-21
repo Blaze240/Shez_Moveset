@@ -11,12 +11,13 @@ titleid = "01006A800016E000"
 crate-type = ["cdylib"]
 
 [dependencies]
-skyline = "0.2.1"
+skyline = { git = "https://github.com/ultimate-research/skyline-rs.git" }
 skyline_smash = { git = "https://github.com/blu-dev/skyline-smash.git", features = ["weak_l2cvalue"] }
 smash_script = { git = "https://github.com/blu-dev/smash-script.git", branch = "development" }
 smashline = { git = "https://github.com/hdr-development/smashline.git" }
 smash_singletons = { git = "https://github.com/WuBoytH/smash_singletons.git" }
 arcropolis-api = { git = "https://github.com/Raytwo/arcropolis_api"}
+the_csk_collection_api = {git = "https://github.com/Coolsonickirby/the_csk_collection_api.git"}
 smash-sli = "0.9.0"
 
 [profile.dev]
